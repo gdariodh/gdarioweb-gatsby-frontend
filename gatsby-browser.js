@@ -1,3 +1,6 @@
+// hacemos disponible tailwind en la app
+import "./src/components/tailwind.css"
+
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
