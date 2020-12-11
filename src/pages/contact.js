@@ -21,19 +21,23 @@ const Contact = () => {
           />
         </div>
         <div>
-          <div className="mb-3 mt-3 md:mt-0">
+          <div className="mb-1 mt-3 md:mt-0">
             {/** NOMBRE,EMAIL,PHONE*/}
             <h2 className="text-3xl text-center font-semibold">{data.name}</h2>
-            <p className="mt-3 text-gray-700 italic md:text-lg text-md  text-center">
-            <span className='text-gray-800'>email:</span> {data.email}
+            <p className="mt-3 text-gray-900 italic md:text-lg text-md  text-center">
+              <span className="text-gray-700">ubicación:</span> Santiago de
+              Chile 
             </p>
-            <p className="mt-3 text-gray-700 italic md:text-lg text-md  text-center">
-             <span className='text-gray-800'>phone:</span>  {data.phone}
+            <p className="mt-1 text-gray-900 italic md:text-lg text-md  text-center">
+              <span className="text-gray-700">email:</span> {data.email}
+            </p>
+            <p className="mt-1 text-gray-900 italic md:text-lg text-md  text-center">
+              <span className="text-gray-700">phone:</span> {data.phone}
             </p>
           </div>
 
           {/** TODO: REDES */}
-          <p className="text-gray-800 italic md:text-lg text-md text-center mb-2">
+          <p className="text-gray-900 italic md:text-lg text-md text-center mb-2">
             redes sociales:
           </p>
           <div className="flex justify-between">

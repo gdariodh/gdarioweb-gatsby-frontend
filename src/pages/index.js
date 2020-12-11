@@ -96,14 +96,14 @@ const IndexPage = () => {
 
       <div id="about" className="mt-56">
         <h2 className="text-3xl font-bold text-center pt-14 italic">
-          Sobre mi
+          Sobre mí
         </h2>
         <section className=" md:p-2 py-6 flex md:flex-row items-center flex-col animate__animated animate__zoomIn animate__fast">
           <article className="mx-auto md:p-0 mb-3 md:mb-0 max-w-xl my-20 md:mr-4 xl:mr-2">
             <div className="bg-white shadow-lg border-t-4 border-b-4 rounded-lg mb-6 tracking-wide ">
               <div className="px-4 py-2 mt-2">
                 <h2 className="font-bold text-2xl md:text-left text-center text-gray-800 tracking-normal ">
-                 Resumen Profesional
+                 Resumen profesional
                 </h2>
                 <p className="text-sm text-gray-700 px-4 py-1 mr-1 text-justify">
                   {data.description}
