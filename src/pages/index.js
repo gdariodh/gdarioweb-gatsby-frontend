@@ -1,6 +1,6 @@
 import React from "react"
 // gatsby
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 // hook consulta graphql
@@ -62,119 +62,64 @@ const IndexPage = () => {
             </div>
             <div className="flex justify-between  mt-4">
               {/** TODO: target="_blank" abre otra ventana al hacer redirect */}
-              <Link
+              <a
                 target="_blank"
-                to="https://github.com/gdariodh"
+                rel="noreferrer"
+                href={data.github}
                 className="text-xl font-medium  flex"
               >
                 <FaGithub className="mr-1 h-7" />
                 Github
-              </Link>
-              <Link
+              </a>
+              <a
                 target="_blank"
-                to={data.linkedin}
+                rel="noreferrer"
+                href={data.linkedin}
                 className="text-xl font-medium  flex"
               >
                 <FaLinkedin className="mr-1 h-7 text-blue-600" />
-                Linkedin
-              </Link>
-              <Link
+                LinkedIn
+              </a>
+              <a
                 target="_blank"
-                to="https://twitter.com/gdariodh"
+                rel="noreferrer"
+                href={data.twitter}
                 className="text-xl font-medium  flex"
               >
                 <FaTwitter className="mr-1 h-7 text-blue-500" />
                 Twitter
-              </Link>
+              </a>
             </div>
           </div>
         </div>
       </BackgroundImage>
 
-      <div id="about" className="mt-72">
-        <h2 className="text-3xl font-bold text-center pt-14 pb-2 italic">
-          About me
+      <div id="about" className="mt-56">
+        <h2 className="text-3xl font-bold text-center pt-14 italic">
+          Sobre mi
         </h2>
-        <section className=" md:p-2 py-6 flex md:flex-row flex-col animate__animated animate__fadeInLeftBig">
-          {/** TODO: CARDS DE ABOUT */}
-
-          {/** TODO: CARD */}
-
-          <article class="mx-auto md:px-4 md:py-8 mb-3 md:mb-0 max-w-xl my-20 ">
-            <div class="bg-white shadow-lg border-t-4 border-b-4 rounded-lg mb-6 tracking-wide ">
-              <div class="px-4 py-2 mt-2">
-                <h2 class="font-bold text-2xl text-gray-800 tracking-normal ">
-                  My Amaizing Journey to the Mountains.
+        <section className=" md:p-2 py-6 flex md:flex-row items-center flex-col animate__animated animate__zoomIn animate__fast">
+          <article className="mx-auto md:p-0 mb-3 md:mb-0 max-w-xl my-20 md:mr-4 xl:mr-2">
+            <div className="bg-white shadow-lg border-t-4 border-b-4 rounded-lg mb-6 tracking-wide ">
+              <div className="px-4 py-2 mt-2">
+                <h2 className="font-bold text-2xl md:text-left text-center text-gray-800 tracking-normal ">
+                 Resumen Profesional
                 </h2>
-                <p class="text-sm text-gray-700 px-2 mr-1">
+                <p className="text-sm text-gray-700 px-4 py-1 mr-1 text-justify">
                   {data.description}
                 </p>
-                <div class="flex items-center justify-between mt-2 mx-6">
-                  <a href="#" class="text-blue-500 text-xs -ml-3 ">
-                    Show More
-                  </a>
-                  <a href="#" class="flex text-gray-700">
-                    <svg
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      class="w-6 h-6 text-blue-500"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
-                      />
-                    </svg>
-                    5
-                  </a>
-                </div>
-                <div class="author flex items-center -ml-3 my-3">
-                  <h2 class="text-sm tracking-tighter text-gray-900">
-                    <a href="#">By Mohammed Ibrahim</a>{" "}
-                    <span class="text-gray-600">21 SEP 2015.</span>
-                  </h2>
-                </div>
               </div>
             </div>
           </article>
 
           {/** TODO: CARD 2 */}
-          <article class="mx-auto md:px-4  md:py-8 mb-3 my-20 md:mb-0 max-w-xl ">
-            <div class="bg-white shadow-lg border-t-4 border-b-4 border-gray-200 rounded-lg mb-6 tracking-wide">
-              <div class="px-4 py-2 mt-2">
-                <h2 class="font-bold text-2xl text-gray-800 tracking-normal">
-                  My Amaizing Journey to the Mountains.
+          <article className="mx-auto md:p-0 mb-3 md:my-20 my-8 md:mb-0 max-w-xl">
+            <div className="bg-white shadow-lg border-t-4 border-b-4 border-gray-200 rounded-lg mb-6 tracking-wide">
+              <div className="px-4 py-2 mt-2">
+                <h2 className="font-bold text-2xl md:text-left text-center text-gray-800 tracking-normal">
+                  ¿Quién soy y qué me identifica?
                 </h2>
-                <p class="text-sm text-gray-700 px-2 mr-1">{data.about}</p>
-                <div class="flex items-center justify-between mt-2 mx-6">
-                  <a href="#" class="text-blue-500 text-xs -ml-3 ">
-                    Show More
-                  </a>
-                  <a href="#" class="flex text-gray-700">
-                    <svg
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      class="w-6 h-6 text-blue-500"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
-                      />
-                    </svg>
-                    5
-                  </a>
-                </div>
-                <div class="author flex items-center -ml-3 my-3">
-                  <h2 class="text-sm tracking-tighter text-gray-900">
-                    <a href="#">By Mohammed Ibrahim</a>{" "}
-                    <span class="text-gray-600">21 SEP 2015.</span>
-                  </h2>
-                </div>
+                <p className="text-sm text-gray-700 px-4 py-1 mr-1 text-justify">{data.about}</p>
               </div>
             </div>
           </article>

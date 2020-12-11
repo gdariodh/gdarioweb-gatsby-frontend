@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gdariodh`,
+    description: `My website - gdariodh - frontend Developer`,
+    author: `gdariodh`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -60,7 +60,13 @@ module.exports = {
         contentTypes: [`category`,`info`,`projects`,`skills`],
       },
     },
-   
+    // declarar tag de lang html con plugin que accede a los meta datos
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'es'
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

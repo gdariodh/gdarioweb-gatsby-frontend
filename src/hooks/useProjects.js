@@ -8,8 +8,8 @@ const useProjects = () => {
       allStrapiProjects {
         nodes {
           description
-          email
           github
+          github2
           hashtags
           name
           picture {

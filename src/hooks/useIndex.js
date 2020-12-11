@@ -9,7 +9,10 @@ const useIndex = () => {
           name
           description
           about
+          email
+          phone
           linkedin
+          twitter
           github
           picture {
             childImageSharp {

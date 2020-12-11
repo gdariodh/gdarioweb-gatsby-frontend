@@ -7,18 +7,17 @@ const Layout = ({ children }) => {
   return (
     <>
       <Helmet>
-        <title>gdariodh</title>
+        <title>Gdariodh</title>
         <meta name="description" content="react gatsby developer website" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
       </Helmet>
-      <div className="flex flex-col">
-        <Header />
 
-        <main className="w-full">{children}</main>
-      </div>
+      <Header />
+
+      {children}
     </>
   )
 }

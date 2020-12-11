@@ -11,10 +11,10 @@ const Skills = () => {
     <Layout>
       <div className="flex justify-center items-center  w-full">
         <div id="about" className="mt-4">
-          <section className=" md:p-14 mt-6 flex flex-row justify-center ml-4 flex-wrap animate__animated animate__zoomIn">
+          <section className=" md:p-14 mt-6 flex flex-row justify-center ml-4 flex-wrap animate__animated animate__zoomIn animate__faster">
             {skills &&
-              skills.map(skill => (
-                <article className="w-40 md:w-64 mb-5 md:mb-4 bg-white shadow-lg  border-gray-200 border-2 md:rounded-xl  overflow-hidden  mr-4">
+              skills.map((skill,i) => (
+                <article key={`${skill}-${i}`} className="w-40 md:w-64 mb-5 md:mb-4 bg-white shadow-lg  border-gray-200 border-2 md:rounded-xl  overflow-hidden  mr-4">
                   <div className="p-8 flex items-center justify-center  uppercase flex-wrap md:flex-nowrap	">
                     {/** TODO: CARD */}
                     <Image
