@@ -10,6 +10,8 @@ import useIndex from "../hooks/useIndex"
 const Contact = () => {
   const { data } = useIndex()
   const avatar = data.picture.childImageSharp.fluid
+  const cv = data.cv.publicURL
+
   return (
     <Layout>
       <div className="w-full py-4 px-8 flex md:flex-row flex-col flex-wrap md:justify-around justify-center items-center  rounded-lg my-20 animate__animated animate__fadeIn animate__faster">
@@ -26,7 +28,7 @@ const Contact = () => {
             <h2 className="text-3xl text-center font-semibold">{data.name}</h2>
             <p className="mt-3 text-gray-900 italic md:text-lg text-md  text-center">
               <span className="text-gray-700">ubicación:</span> Santiago de
-              Chile 
+              Chile
             </p>
             <p className="mt-1 text-gray-900 italic md:text-lg text-md  text-center">
               <span className="text-gray-700">email:</span> {data.email}
@@ -67,6 +69,16 @@ const Contact = () => {
             >
               <FaTwitter className="mr-1 h-7 text-blue-500" />
               Twitter
+            </a>
+          </div>
+          <div className="flex justify-center mt-4">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={`https://gdariodh.netlify.app${cv}`}
+              className="text-center bg-blue-500 shadow-md text-white font-bold px-3 py-2 border rounded-md"
+            >
+              Descargar CV
             </a>
           </div>
         </div>

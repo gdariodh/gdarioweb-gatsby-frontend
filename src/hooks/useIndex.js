@@ -14,9 +14,12 @@ const useIndex = () => {
           linkedin
           twitter
           github
+          cv {
+            publicURL
+          }
           picture {
             childImageSharp {
-              fluid(quality: 100) {
+              fluid(quality: 95) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }

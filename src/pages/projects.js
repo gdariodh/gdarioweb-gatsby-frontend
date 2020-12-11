@@ -32,7 +32,7 @@ const Projects = () => {
                     {project.description}
                   </p>
 
-                  <p className="text-sm mt-3 font-semibold text-gray-800 text-center px-2 overflow-ellipsis overflow-hidden animate__animated animate__headShake">
+                  <p className="text-sm mt-3 font-semibold text-gray-800 text-center px-2 overflow-ellipsis overflow-hidden animate__animated animate__headShake animate__delay-3s">
                    Link de <span className='text-blue-500'>{project.name}</span> y GitHub en "Ver más" 🧐
                   </p>
                   <div className="flex items-center p-2 mt-2 justify-center ">

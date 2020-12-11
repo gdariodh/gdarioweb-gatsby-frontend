@@ -11,7 +11,7 @@ const Skills = () => {
           name
           picture {
             childImageSharp {
-              fluid(quality: 100, maxWidth: 64, maxHeight: 64) {
+              fluid(quality: 85, maxWidth: 64, maxHeight: 64) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }

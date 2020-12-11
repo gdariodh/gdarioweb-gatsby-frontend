@@ -14,7 +14,7 @@ const useProjects = () => {
           name
           picture {
             childImageSharp {
-              fluid(quality: 80) {
+              fluid(quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
