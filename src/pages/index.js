@@ -16,12 +16,11 @@ const IndexPage = () => {
   // consultar background
   const { file } = useStaticQuery(graphql`
     {
-      file(relativePath: { eq: "home10.jpeg" }) {
+      file(relativePath: { eq: "home10.jpg" }) {
         childImageSharp {
           fluid(
             quality: 80
             maxWidth: 1280
-            duotone: { highlight: "#0ec4f1", shadow: "#192550", opacity: 50 }
           ) {
             ...GatsbyImageSharpFluid_withWebp
           }
@@ -43,13 +42,14 @@ const IndexPage = () => {
         fadeIn="soft"
         alt="background"
       >
-        <div className="flex justify-center ">
-          <div className="max-w-lg py-4 px-8 bg-white shadow-lg border-gray-200 border-2 rounded-lg my-20 md:my-10 animate__animated animate__fadeIn animate__faster">
+        <div className="flex justify-center animate__animated animate__fadeIn animate__faster">
+          <div className="max-w-lg py-4 px-8 bg-white shadow-xl border-gray-200 border-2 rounded-lg my-20 md:my-10">
             <div className="flex justify-center -mt-16">
               <Image
-                className="flex justify-center w-56 h-auto object-cover rounded-full shadow-lg"
+                className="flex justify-center w-56 h-auto object-cover border-gray-50 border-4 rounded-full shadow-xl"
                 fluid={avatar}
                 alt="avatar"
+                fadeIn='soft'
               />
             </div>
             <div className="mt-3">
@@ -57,7 +57,7 @@ const IndexPage = () => {
                 {data.name}
               </h1>
               <p className="mt-2 text-gray-700 italic  text-center">
-                Web Developer
+                Front-End Developer 
               </p>
             </div>
             <div className="flex justify-between  mt-4">
@@ -108,14 +108,14 @@ const IndexPage = () => {
         <h2 className="text-3xl font-bold text-center pt-14 italic">
           Sobre mí
         </h2>
-        <section className=" md:p-2 py-6 flex md:flex-row items-center flex-col animate__animated animate__zoomIn animate__fast">
+        <section className=" md:p-2 py-4 flex md:flex-row items-center flex-col animate__animated animate__zoomIn animate__fast">
           <article className="mx-auto md:p-0 mb-3 md:mb-0 max-w-xl my-10 md:my-6 md:mr-4 xl:mr-2">
-            <div className="bg-white shadow-lg border-t-4  border-gray-300 border-b-4 rounded-lg mb-6 tracking-wide ">
+            <div className="bg-white shadow-lg border-gray-200 border-2 rounded-lg mb-6 tracking-wide ">
               <div className="px-4 py-2 mt-2">
-                <h2 className="font-bold text-2xl md:text-left text-center text-gray-800 tracking-normal ">
+                <h2 className="font-bold text-2xl md:text-left text-center text-gray-900 tracking-normal ">
                   Resumen profesional
                 </h2>
-                <p className="text-sm text-gray-700 px-4 py-1 mr-1 text-justify">
+                <p className="text-sm px-4 text-gray-900 py-1 mr-1  tracking-wide	 leading-6	text-justify">
                   {data.description}
                 </p>
               </div>
@@ -124,12 +124,12 @@ const IndexPage = () => {
 
           {/** TODO: CARD 2 */}
           <article className="mx-auto md:p-0 mb-3 md:md:my-6 my-8 md:mb-0 max-w-xl">
-            <div className="bg-white shadow-lg border-t-4  border-b-4 border-gray-300 rounded-lg mb-6 tracking-wide">
+            <div className="bg-white shadow-lg border-gray-200 border-2  rounded-lg mb-6 tracking-wide">
               <div className="px-4 py-2 mt-2">
-                <h2 className="font-bold text-2xl md:text-left text-center text-gray-800 tracking-normal">
+                <h2 className="font-bold text-2xl md:text-left text-center text-gray-900 tracking-normal">
                   ¿Quién soy y qué me identifica?
                 </h2>
-                <p className="text-sm text-gray-700 px-4 py-1 mr-1 text-justify">
+                <p className="text-sm text-gray-900 px-4 py-1 mr-1 tracking-wide leading-6 text-justify">
                   {data.about}
                 </p>
               </div>

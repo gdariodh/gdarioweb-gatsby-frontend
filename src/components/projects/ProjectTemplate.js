@@ -76,6 +76,7 @@ const Projects = ({ data }) => {
             <Image
               className="md:w-4/5 w-full h-auto shadow-md rounded-lg mx-auto mb-6 md:mb-0 md:mr-6"
               fluid={picture}
+              fadeIn='soft'
             />
 
             <div>
@@ -146,10 +147,10 @@ const Projects = ({ data }) => {
           <article className="w-full my-10 mx-auto">
             <div className="bg-white   rounded-lg mb-6 tracking-wide ">
               <div className="px-4 py-2 mt-2">
-                <h2 className="font-bold text-2xl text-gray-800 tracking-normal text-center mb-2 underline">
+                <h2 className="font-bold text-2xl  text-gray-800 tracking-normal text-center mb-2 ">
                   Descripción
                 </h2>
-                <p className="text-sm text-gray-700 px-2 mr-1">
+                <p className="text-sm text-gray-900 p-4 border-gray-200 border-2 mr-1 tracking-wide	 leading-6	text-justify shadow-md  rounded-lg">
                   {project.description}
                 </p>
               </div>
@@ -163,8 +164,8 @@ const Projects = ({ data }) => {
         </h3>
         <div className="w-full flex justify-center flex-wrap md:flex-row flex-col rounded-lg tracking-wide">
           {gallery.map((picture,i) => (
-            <div key={`${picture}-${i}`} className="md:w-2/5 w-full shadow-md rounded-lg md:m-4 my-6">
-              <Image fluid={picture} />
+            <div key={`${picture}-${i}`} className="md:w-2/5 w-full border shadow-md rounded-lg md:m-4 my-6">
+              <Image fadeIn='soft' fluid={picture}  /> 
             </div>
           ))}
         </div>

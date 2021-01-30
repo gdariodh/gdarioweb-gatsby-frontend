@@ -12,6 +12,7 @@ const useProjects = () => {
           github2
           hashtags
           name
+          link
           picture {
             childImageSharp {
               fluid(quality: 85) {
