@@ -60,13 +60,13 @@ const IndexPage = () => {
                 Front-End Developer 
               </p>
             </div>
-            <div className="flex justify-between  mt-4">
+            <div className="flex justify-between mt-4">
               {/** TODO: target="_blank" abre otra ventana al hacer redirect */}
               <a
                 target="_blank"
                 rel="noreferrer"
                 href={data.github}
-                className="text-xl font-medium  flex"
+                className="text-xl font-medium flex"
               >
                 <FaGithub className="mr-1 h-7" />
                 Github
@@ -75,7 +75,7 @@ const IndexPage = () => {
                 target="_blank"
                 rel="noreferrer"
                 href={data.linkedin}
-                className="text-xl font-medium  flex"
+                className="text-xl font-medium flex"
               >
                 <FaLinkedin className="mr-1 h-7 text-blue-600" />
                 LinkedIn

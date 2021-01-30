@@ -74,7 +74,7 @@ const Projects = ({ data }) => {
         <div className="w-full md:p-6 mt-10 md:mt-0">
           <div className="flex flex-col justify-center md:flex-row md:justify-between">
             <Image
-              className="md:w-4/5 w-full h-auto shadow-md rounded-lg mx-auto mb-6 md:mb-0 md:mr-6"
+              className="md:w-4/5 w-full h-auto shadow mx-auto mb-6 md:mb-0 md:mr-6 border-gray-100 border-2"
               fluid={picture}
               fadeIn='soft'
             />
@@ -82,7 +82,7 @@ const Projects = ({ data }) => {
             <div>
               {/** TODO: LINKEIN, GITHUB */}
               <article className="max-w-xl">
-                <div className="bg-white shadow-md  rounded-lg mb-6 tracking-wide ">
+                <div className="bg-white shadow-md border-gray-100 border-2 md:border-none  rounded-lg mb-6 md:mt-0 mt-4 tracking-wide ">
                   <div className="px-4 py-2">
                     <h2 className="font-bold text-2xl text-gray-800 tracking-normal truncate">
                       Nombre: {project.name}
@@ -95,7 +95,7 @@ const Projects = ({ data }) => {
               </article>
               {/** TODO: LINKS DE REPO Y APPS */}
               <article className="max-w-xl">
-                <div className="bg-white shadow-md  rounded-lg mb-6 tracking-wide ">
+                <div className="bg-white shadow-md  rounded-lg mb-6 tracking-wide border-gray-100 border-2 md:border-none">
                   <div className="px-4 py-2 mt-2 w-full">
                     {/** TODO: Nombre de la app */}
                     <div className="md:my-2 w-full">
@@ -106,7 +106,7 @@ const Projects = ({ data }) => {
                         target="_blank"
                         rel="noreferrer"
                         href={project.link}
-                        className=" text-blue-500 text-lg md:text-base font-semibold px-2 mr-1"
+                        className=" text-blue-500 text-lg md:text-base font-semibold px-2 md:mr-1"
                       >
                         {project.link}
                       </a>
@@ -116,12 +116,12 @@ const Projects = ({ data }) => {
                       <h2 className="font-bold text-2xl text-gray-800 tracking-normal ">
                         GitHub:
                       </h2>
-                      <div className="flex flex-wrap justify-center items-center ">
+                      <div className="flex flex-wrap items-center ">
                         <a
                           target="_blank"
                           rel="noreferrer"
                           href={project.github}
-                          className="text-blue-500  text-lg md:text-base flex-wrap  font-semibold px-2 truncate"
+                          className="text-blue-500  text-lg md:text-base  font-semibold px-2  truncate"
                         >
                           {project.github}
                         </a>
@@ -131,7 +131,7 @@ const Projects = ({ data }) => {
                             target="_blank"
                             rel="noreferrer"
                             href={project.github2}
-                            className="mt-2 text-blue-500 text-lg   md:text-base font-semibold px-2 truncate "
+                            className="mt-2 text-blue-500 text-lg   md:text-base font-semibold px-2  truncate "
                           >
                             {project.github2}
                           </a>

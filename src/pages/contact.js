@@ -24,7 +24,7 @@ const Contact = () => {
           />
         </div>
         <div className='animate__animated animate__pulse  animate__fast'>
-          <div className="mb-1 mt-3 md:mt-0">
+          <div className="mb-1 mt-10 md:mt-0">
             {/** NOMBRE,EMAIL,PHONE*/}
             <h2 className="text-3xl text-center font-semibold">{data.name}</h2>
             <p className="mt-3 text-gray-900  md:text-lg text-md  text-center">

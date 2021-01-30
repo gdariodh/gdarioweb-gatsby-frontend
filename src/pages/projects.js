@@ -12,11 +12,11 @@ const Projects = () => {
 
   return (
     <Layout>
-      <section className=" flex  flex-wrap md:flex-row flex-col md:mt-16 mt-10 animate__animated animate__fadeIn animate__faster">
+      <section className="flex md:flex-wrap md:flex-row flex-col md:mt-6 mt-10 animate__animated animate__fadeIn animate__faster">
         {projects &&
           projects.map((project,i) => (
-            <article key={`${project}-${i}`} className="mx-auto md:px-4 md:py-8 mb-3 md:mb-0 max-w-lg ">
-              <div className="bg-white shadow-2xl rounded-lg mb-6 tracking-wide">
+            <article key={`${project}-${i}`} className="mx-auto md:px-4 md:py-8 mb-3 md:mb-0 md:max-w-lg w-full">
+              <div className="bg-white shadow-xl border-gray-100 border-2 rounded-lg mb-6 tracking-wide ">
                 <div className="md:flex-shrink-0">
                 <a
                  target="_blank"
@@ -34,17 +34,17 @@ const Projects = () => {
                  
                 </div>
                 <div className="px-4 py-2 mt-2">
-                  <h2 className="font-bold text-2xl text-gray-900 tracking-normal">
+                  <h2 className="font-bold text-2xl text-gray-900 h-8 truncate italic tracking-normal ml-1">
                     {project.name}
                   </h2>
-                  <p className="text-sm text-gray-900 px-2 h-24 overflow-ellipsis overflow-hidden tracking-wide text-justify	 leading-6" >
+                  <p className="text-sm text-gray-900 px-4 py-2 h-20  overflow-ellipsis overflow-hidden tracking-wide text-justify	 leading-6" >
                     {project.description}
                   </p>
 
-                  <p className="text-sm mt-3 font-semibold text-blue-500 text-center px-2 overflow-ellipsis overflow-hidden animate__animated animate__pulse animate__delay-3s animate__repeat-2">
-                   Link de <span className='text-gray-900'>{project.name}</span> y GitHub en <span className='text-gray-900'>"Ver más"</span> 🧐
+                  <p className="text-sm mt-3 font-semibold text-blue-500 text-center px-2 overflow-ellipsis h-10 overflow-hidden animate__animated animate__pulse animate__delay-3s animate__repeat-2">
+                   Link de la app y GitHub en <span className='text-gray-900'>"Ver más"</span> 🧐
                   </p>
-                  <div className="flex items-center p-2 mt-2 justify-center ">
+                  <div className="flex items-center p-2 my-2 justify-center ">
                     {/** TODO: para que vaya a la url con slug, y que sea igual que las se crean en gatsby-node */}
                     <Link
                       to={`/${urlSlug(project.name)}`}
