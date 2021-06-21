@@ -33,6 +33,7 @@ const IndexPage = () => {
   const avatar = data.picture.childImageSharp.fluid // viene de useIndex
   const cv = data.cv.publicURL
 
+
   return (
     <Layout>
       <BackgroundImage
@@ -42,7 +43,7 @@ const IndexPage = () => {
         fadeIn="soft"
         alt="background"
       >
-        <div className="flex justify-center animate__animated animate__fadeIn animate__faster">
+        <div className="flex justify-center">
           <div className="max-w-lg py-4 px-8 bg-white shadow-xl border-gray-200 border-2 rounded-lg my-20 md:my-10">
             <div className="flex justify-center -mt-16">
               <Image

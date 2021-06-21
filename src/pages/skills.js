@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <Layout>
       <div className="flex justify-center items-center  w-full">
-        <div id="about" className="mt-4 animate__animated animate__fadeIn animate__faster">
+        <div id="about" className="mt-4">
           <section className=" md:p-2 mt-4 flex flex-row justify-center ml-4 flex-wrap ">
             {skills &&
               skills.map((skill,i) => (

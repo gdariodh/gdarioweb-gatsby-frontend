@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const Header = () => {
   return (
-    <header className=" w-full flex justify-center items-center border-b-4 border-blue-200 shadow-lg">
+    <header className=" w-full flex justify-center items-center border-b-4  shadow-lg">
       <div className="p-3">
         {/** TODO: Navegacion */}
         <nav className=" text-xl text-gray-800 flex justify-between font-bold italic ">

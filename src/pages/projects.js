@@ -12,7 +12,7 @@ const Projects = () => {
 
   return (
     <Layout>
-      <section className="flex flex-wrap sm:flex-row flex-col md:mt-6 mt-10 animate__animated animate__fadeIn animate__faster">
+      <section className="flex flex-wrap sm:flex-row flex-col md:mt-6 mt-10">
         {projects &&
           projects.map((project,i) => (
             <article key={`${project}-${i}`} className="mx-auto md:px-4 md:py-8 mb-3 md:mb-0 md:max-w-sm lg:max-w-md sm:max-w-xs xl:max-w-lg	 w-full">
